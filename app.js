@@ -41,9 +41,16 @@ function showError(error) {
   //create a div
   const errorDiv = document.createElement("div");
 
+  // Get element
+  const card = document.querySelector(".card");
+  const heading = document.querySelector(".heading");
+
   //Add bootstrap class
   errorDiv.className = "alert alert-danger";
 
   // create text node and append to div
   errorDiv.appendChild(document.createTextNode(error));
+
+  //insert errror above heading
+  card.insertBefore(errorDiv, heading);
 }
