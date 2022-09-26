@@ -48,13 +48,53 @@
                   placeholder="Years To Repay"
                 />
               </div>
-              <div class="form-group d-grid">
+              <div class="form-group d-grid mb-3">
                 <input type="submit" value="Calculate" class="btn btn-dark" />
               </div>
             </form>
 
-            <!-- LOADER HERE -->
+            <!-- LOADER -->
+            <!-- <div id="loading">
+              <img src="img/koala.gif" alt="" />
+            </div> -->
+
             <!-- RESULTS -->
+            <div class="results">
+              <h5>Results</h5>
+              <div class="form-group mb-3">
+                <div class="input-group">
+                  <span class="input-group-text">Monthly Payment</span>
+                  <input
+                    type="number"
+                    class="form-control"
+                    id="monthly-payment"
+                    disabled
+                  />
+                </div>
+              </div>
+              <div class="form-group mb-3">
+                <div class="input-group">
+                  <span class="input-group-text">Total Payment</span>
+                  <input
+                    type="number"
+                    class="form-control"
+                    id="total-payment"
+                    disabled
+                  />
+                </div>
+              </div>
+              <div class="form-group mb-3">
+                <div class="input-group">
+                  <span class="input-group-text">Total Interest</span>
+                  <input
+                    type="number"
+                    class="form-control"
+                    id="total-interest"
+                    disabled
+                  />
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -64,5 +104,6 @@
       integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
       crossorigin="anonymous"
     ></script>
+    <script src="app.js"></script>
   </body>
 </html>
